@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Myra Jane</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- GLightbox CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="light-theme">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3 fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold display-6" href="index.html">Myra Jane</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPortfolio" aria-controls="navbarPortfolio" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarPortfolio">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html" aria-current="page">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-3">
+            <button id="themeToggle" class="btn btn-outline-primary btn-sm">Dark Mode</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Portfolio Section -->
+  <main class="container portfolio-section py-5 mt-5">
+    <h1 class="display-6 fw-bold text-center mb-5" data-aos="fade-up">My Projects</h1>
+
+    <div class="row g-4">
+      <!-- Portfolio Item Example -->
+      <div class="col-sm-6 col-md-4" data-aos="fade-up">
+        <div class="card portfolio-card shadow-sm border-0">
+          <a href="assets/images/project1.jpg" class="glightbox" data-gallery="portfolio">
+            <img src="assets/images/project1.jpg" class="card-img-top gallery-img" alt="Project 1">
+            <div class="overlay d-flex align-items-center justify-content-center">
+              <span class="text-white fw-bold">Project 1</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card portfolio-card shadow-sm border-0">
+          <a href="assets/images/project2.jpg" class="glightbox" data-gallery="portfolio">
+            <img src="assets/images/project2.jpg" class="card-img-top gallery-img" alt="Project 2">
+            <div class="overlay d-flex align-items-center justify-content-center">
+              <span class="text-white fw-bold">Project 2</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card portfolio-card shadow-sm border-0">
+          <a href="assets/images/project3.jpg" class="glightbox" data-gallery="portfolio">
+            <img src="assets/images/project3.jpg" class="card-img-top gallery-img" alt="Project 3">
+            <div class="overlay d-flex align-items-center justify-content-center">
+              <span class="text-white fw-bold">Project 3</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Add more projects similarly -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-muted small mt-5">
+    © <span id="yearPortfolio"></span> Myra Jane — All rights reserved
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  <script>
+    // Dynamic year
+    document.getElementById('yearPortfolio').textContent = new Date().getFullYear();
+
+    // Initialize AOS
+    AOS.init({ duration: 1200 });
+
+    // Initialize GLightbox
+    const lightbox = GLightbox({ selector: '.glightbox' });
+
+    // Theme toggle
+    const themeBtn = document.getElementById('themeToggle');
+    themeBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+      document.body.classList.toggle('light-theme');
+      themeBtn.textContent = document.body.classList.contains('dark-theme') ? 'Light Mode' : 'Dark Mode';
+    });
+  </script>
+</body>
+</html>

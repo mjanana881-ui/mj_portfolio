@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Myra Jane</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+ <style>
+    body {
+      padding-top: 80px; /* Adjust for fixed navbar */
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar {
+      background: rgba(0,0,0,0.8) !important;
+      backdrop-filter: blur(6px);
+    }
+
+    .contact-section .card {
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    button.btn-primary {
+      background: #e52e71;
+      border: none;
+      transition: 0.3s;
+    }
+
+    button.btn-primary:hover {
+      background: #ff8a00;
+      transform: scale(1.05);
+    }
+  </style>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Myra Jane</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="about-section container py-5 mt-5 animate__animated animate__fadeIn">
+    <div class="row align-items-center">
+      <div class="col-md-5 text-center">
+        <img src="f173cacb-1969-4bb9-a573-3df2b75651e9.jfif" class="rounded-circle img-fluid shadow" alt="Myra Jane" />
+      </div>
+      <div class="col-md-7">
+        <h2 class="fw-bold">About Me</h2>
+        <p class="lead mt-3">
+          Hello! I'm <strong>Myra Jane</strong>, a passionate and creative aspiring web developer focused on building responsive,
+          user-friendly, and visually appealing websites. I love mixing clean code with modern design to bring ideas to life.
+        </p>
+        <p>
+          My journey in tech started with curiosity, and now it continues with dedication. I aim to create projects that are not
+          only functional but meaningful.
+        </p>
+
+        <h4 class="mt-4">Skills</h4>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Bootstrap Framework</li>
+          <li>UI/UX Layout Design</li>
+          <li>Responsive Web Design</li>
+        </ul>
+
+        <a href="contact.html" class="btn btn-primary mt-3 animate__animated animate__pulse">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

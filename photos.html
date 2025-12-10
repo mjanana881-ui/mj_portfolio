@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photos | Myra Jane</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="style.css" rel="stylesheet" />
+
+ <style>
+    body {
+      padding-top: 80px; /* Adjust for fixed navbar */
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar {
+      background: rgba(0,0,0,0.8) !important;
+      backdrop-filter: blur(6px);
+    }
+
+    .contact-section .card {
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    button.btn-primary {
+      background: #e52e71;
+      border: none;
+      transition: 0.3s;
+    }
+
+    button.btn-primary:hover {
+      background: #ff8a00;
+      transform: scale(1.05);
+    }
+  </style>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Myra Jane</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="photos.html">Photos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Photos Gallery -->
+  <section class="container py-5 mt-5 animate__animated animate__fadeIn">
+    <h2 class="text-center mb-4 fw-bold">My Photos</h2>
+
+    <div class="row g-4">
+      <!-- Photo Item -->
+      <div class="col-md-4 col-sm-6">
+        <div class="photo-card shadow-lg animate__animated animate__zoomIn">
+          <img src="e367b65f-d0b6-43f8-a1df-2f217d0033ba.jfif" class="img-fluid rounded" alt="Photo 1" />
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="photo-card shadow-lg animate__animated animate__zoomIn animate__delay-1s">
+          <img src="791b6312-3c89-4f6a-89f4-7fe8f36be6c4.jfif" class="img-fluid rounded" alt="Photo 2" />
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="photo-card shadow-lg animate__animated animate__zoomIn animate__delay-2s">
+          <img src="2f739f9b-ccc5-4d88-9052-bf7d17ab777f.jfif" class="img-fluid rounded" alt="Photo 3" />
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="photo-card shadow-lg animate__animated animate__zoomIn animate__delay-3s">
+          <img src="3e04d816-edf7-49a4-a11d-2498dcf80caa.jfif" class="img-fluid rounded" alt="Photo 4" />
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="photo-card shadow-lg animate__animated animate__zoomIn animate__delay-4s">
+          <img src="fb1c8e9a-3b09-442b-b947-5b21350fedbc.jfif" class="img-fluid rounded" alt="Photo 5" />
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="photo-card shadow-lg animate__animated animate__zoomIn animate__delay-5s">
+          <img src="15fd05a5-44f3-4cf9-9d0a-624b26b7e800.jfif" class="img-fluid rounded" alt="Photo 6" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
